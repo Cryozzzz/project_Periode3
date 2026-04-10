@@ -1,0 +1,94 @@
+#formfilter {
+  display: flex;
+  flex-direction: column;
+}
+.aanbod {
+  padding: 1em 4em;
+  display: flex;          
+  gap: 30px;
+  align-items: flex-start;
+}
+ 
+.cars {
+  flex: 1;
+}
+aside {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 1000px;
+}
+.fi-cla {
+  color: #90A3BF;
+}
+#filt-button {
+  border: none;
+  background-color: #3563e9;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+       
+
+@media (max-width: 1024px) {
+ 
+  .aanbod {
+    flex-direction: column;
+    padding: 1em;
+  }
+ 
+  /* FILTER MOVES TO TOP */
+  aside {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5em;
+  }
+ 
+  /* MAKE FILTER LOOK CLEANER */
+  #formfilter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+  }
+ 
+  /* CHECKBOXES MORE TOUCH-FRIENDLY */
+  #formfilter label {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+ 
+  /* BUTTON FULL WIDTH */
+  #filt-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+ 
+  /* CARS GRID */
+  .cars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+ 
+/* SMALL PHONES */
+@media (max-width: 600px) {
+ 
+  .cars {
+    grid-template-columns: 1fr; /* 1 car per row */
+  }
+ 
+  aside {
+    padding: 15px;
+  }
+ 
+  #priceRange {
+    width: 100%;
+  }
+}
+ 
+ 

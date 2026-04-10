@@ -1,0 +1,20 @@
+.container{
+    margin: auto;
+    background-color: white; 
+    width: fit-content;
+    padding: 10px; 
+    border-radius: 20px;
+    margin: 40px;
+}
+.img{
+    margin-left: 100px;
+    border-radius: 20px;
+    width: 400px;
+    max-height: 267px;
+    padding: 10px;
+}
+.img-rydr{
+    margin: auto;
+    border-radius: 20px;
+    z-index: 1000;
+}
